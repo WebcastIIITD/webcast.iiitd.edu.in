@@ -1,0 +1,476 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+a,a:link,a:visited,a:hover,a:active
+{
+  text-decoration: none;
+}
+
+.iiitd-giving-btn
+{
+  user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  color: #fff;
+  background-color: #3fada8;
+  display: inline-block;
+  padding: 15px 30px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 0px solid #3fada8;
+}
+
+.iiitd-giving-btn:hover
+{
+  border-bottom: 10px solid #369691;
+  padding: 20px 40px;
+}
+
+.iiitd-giving-btn:active
+{
+  border-bottom: 0px solid #369691;
+  padding: 25px 40px;
+}
+
+#head div#header
+{
+  background: #222;
+  padding: 0;
+  padding: 20px 0;
+}
+
+#head div#header .logo
+{
+  background-image: url("https://www.iiitd.ac.in/sites/default/files/images/graphicidentity/logo/style3singlecolormid.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45%;
+  height: 100px;
+/*  margin-top: 20px;*/
+/*  padding-top: 20px;*/
+/*  background-color: red;*/
+  display: inline-block;
+  margin: 0;
+  border-right: 2px solid #fff;
+}
+
+#head div#header .title
+{
+  height: 100px;
+  line-height: 100px;
+  font-weight: 100;
+  font-size: 38px;
+/*  color: #3fada8;*/
+  color: #fff;
+  font-family: roboto;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+#head #nav-main
+{
+  background-color: #333;
+  text-align: center;
+}
+
+#head #nav-main.open
+{
+  background-color: #111;
+  transition-duration: 0.5s;
+}
+
+#head #nav-main a li
+{
+  color: #fff;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-block;
+/*  margin: 5px 10px;*/
+  padding: 15px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+/*  border-bottom: 5px solid transparent;*/
+}
+
+#head #nav-main a li#active
+{
+  padding-bottom: 15px;
+  border-bottom: 5px solid #3fada8;
+}
+
+#head #nav-main a li:hover:not(#active)
+{
+  background-color: #2a2a2a;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #ddd;
+  transition: 0.2s;
+}
+
+#head #nav-main li.small-item
+{
+  margin-right: 5px;
+  display: block;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 10px;
+  font-size: 20px;  
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  left: 0;
+  display: none;
+  position: absolute;
+  cursor: pointer; 
+}
+
+#head #nav-main li.small-item img
+{
+/*  background: red;*/
+  height: 40px;
+  vertical-align: top;
+  margin-top: 7px;
+}
+
+#head #nav-main li.menu-icon
+{
+  padding: 5px;
+  margin-right: 5px;
+  display: block;
+  height: 55px;
+  width: 55px;
+  right: 0;
+  position: absolute;
+  cursor: pointer;  
+  display: none;
+}
+
+#head #nav-main li.menu-icon .line
+{
+/*  display: none;*/
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 5px;
+  background: #fff;  
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#head #nav-main li.menu-icon .line:nth-child(1)
+{top:17px}
+#head #nav-main li.menu-icon .line:nth-child(2)
+{top:26px}
+#head #nav-main li.menu-icon .line:nth-child(3)
+{top:35px}
+#head #nav-main li.menu-icon.open .line:nth-child(1)
+{
+  top: 26px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+#head #nav-main li.menu-icon.open .line:nth-child(2)
+{
+  opacity: 0;
+  left: 0;
+}
+#head #nav-main li.menu-icon.open .line:nth-child(3)
+{ 
+  top: 26px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+#head #nav-small
+{
+  font-family: roboto;
+  display: none;
+  z-index: 7;
+  position: fixed;
+  min-height: calc(100vh - 50px);
+  width: 100%;
+  background-color: #111;
+  margin: 0;
+  margin-top: 55px;
+  list-style-type: none;
+  text-align: left;
+  padding-top: 20vh;
+  overflow-y: auto;
+}
+
+#head #nav-small li
+{
+  color: #fff;
+  font-weight: 400;
+  display: block;
+  font-size: 4vw;
+  padding: 2vw 0;
+  margin-left: 15vw;
+  padding-left: 3vw;
+  cursor: pointer;
+}
+
+#head #nav-small li.active
+{
+  padding-left: 2vw;
+  border-left: 1vw solid #3fada8;
+}
+
+#head #nav-small li:hover
+{
+  padding-left: 2vw;
+  border-left: 1vw solid #3fada8;
+}
+
+#give-now-section
+{
+  display: block;
+  height: auto;
+/*  background-image: url("http://foobar.iiitd.edu.in/static/img/works/1.jpg");*/
+  background-image: url(img/convo2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  font-family: roboto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#give-now-section #why
+{
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  padding: 50px 0;
+/*  padding-bottom: 50px;*/
+  font-size: 60px;
+  transition: 0.2s;
+  display: inline-block;
+/*  cursor: pointer;*/
+}
+
+#give-now-section #why:hover
+{
+/*  color: #3fada8;*/
+}
+
+#give-now-section .button
+{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: roboto;
+  display: inline-block;  
+  margin-bottom: 40px;
+}
+
+.video-section
+{
+  text-align: left;
+  padding: 80px 50px;
+  background-color: #222;
+  font-family: roboto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.video-section .head-small
+{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.video-section .head-big
+{
+  color: #3fada8;
+  font-size: 28px;
+}
+
+.video-section .head-desig
+{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.video-section .video
+{
+  display: block;
+  margin: auto;
+  width: 60vw;
+  height: 34vw;
+  outline: none;
+  border: 2px solid #3fada8;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+#footer
+{
+  display: block;
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+#footer a
+{
+  font-family: roboto;
+  color: #aaa;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+#footer a:hover
+{
+  color: #3fada8;
+}
+
+@media screen and (max-width:900px)
+{  
+  #head div#header .logo
+  {
+    background-image: url("https://www.iiitd.ac.in/sites/default/files/images/graphicidentity/logo/style1singlecolormid.png");
+    width: 30%;
+  }
+  
+  #head div#header .title
+  {
+    width: 68%;
+  }
+  
+  #info-section .half
+  {
+    display: block;
+    width: 100%;
+  }
+  .video-section
+  {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width:500px)
+{
+  #head #header
+  {
+    display: none;
+  }
+  
+  #head div#header .logo
+  {
+    width: 100%;
+  }
+  
+  #head div#header .title
+  {
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    font-weight: 300;
+    padding: 40px 0;
+  }
+  
+  #head #nav-main
+  {
+    height: 55px;
+    width: 100%;
+    position: fixed;
+  }
+  
+  #head #nav-main  li.item
+  {
+    display: none;
+  }
+  
+  #head #nav-main  li.menu-icon
+  {
+    display: block;
+  }
+  
+  #head #nav-main  li.small-item
+  {
+    display: block;
+  }
+  
+  #nav-fixer
+  {
+    width: 10px;
+    height: 55px;
+    display: block;
+  } 
+  
+  #give-now-section
+  {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  #give-now-section #why
+  {
+    font-size: 40px;
+    padding: 20px;
+  }
+  
+  .video-section
+  {
+    padding: 40px 20px;
+    padding-bottom: 30px;
+  }
+  
+  .video-section .head-small
+  {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .video-section .head-big
+  {
+    color: #3fada8;
+    font-size: 22px;
+  }
+
+  .video-section .head-desig
+  {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .video-section .video
+  {
+    width: 80vw;
+    height: 45.3vw;
+    margin-top: 30px;
+  }
+}
